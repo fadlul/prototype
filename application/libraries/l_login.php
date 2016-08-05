@@ -24,11 +24,11 @@ class L_login {
             $this->CI->session->set_userdata('id', $id);
             $data=array('user' => $username);
             if ($admin->idrule==1) {
-                redirect('admin/dashboard');
+                redirect(site_url('admin/dashboard'));
             }else{
                 // switch ($admin->userrule) {
                 //     case '1':
-                    redirect('dashboard1');
+                    redirect(site_url('dashboard1'));
                     //     break;
                     // case '2':
                     // redirect('dashboard2');
@@ -53,7 +53,7 @@ class L_login {
         if ($this->CI->session->userdata('username') == '') {
             $this->CI->session->set_flashdata('sukses', 'Anda belum login');
         }else{
-            redirect('dashboard1');
+            redirect(site_url('dashboard1'));
         }
     }
 
@@ -63,7 +63,7 @@ class L_login {
         $this->CI->session->unset_userdata('id_login');
         $this->CI->session->unset_userdata('id');
         $this->CI->session->set_flashdata('sukses', 'Anda berhasil logout');
-        redirect('home');
+        redirect(site_url('home'));
     }
 
 }

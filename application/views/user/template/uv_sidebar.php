@@ -20,9 +20,9 @@
                     <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?php echo site_url('dashboard1') ?>"><i class="fa ion-edit"></i>New Dokumen</a></li>
+                    <li><a href="<?php echo site_url('dashboard1/newdokumen') ?>"><i class="fa ion-edit"></i>New Dokumen</a></li>
                     <li><a href="#"><i class="fa fa-edit"></i>Edit Dokumen</a></li>
-                    <li><a href="<?php echo site_url('dashboard1/transaksi') ?>"><i class="fa ion-clipboard"></i>List Dokumen</a></li>
+                    <li><a href="<?php echo site_url('dashboard1/listdokumen') ?>"><i class="fa ion-clipboard"></i>List Dokumen</a></li>
                 </ul>
             </li>
             <li class="treeview">

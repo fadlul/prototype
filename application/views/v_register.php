@@ -6,12 +6,22 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
+		<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 		<title><?php echo $title ?></title>
-		<!-- Bootstrap core CSS -->
-		<link href="<?php echo base_url('assets/AdminLTE-2.0.5/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css" />
 		<!-- Custom styles for this template -->
 		<link href="<?php echo base_url('assets/flat-ui/flat-ui.css'); ?>" rel="stylesheet" >
 		<link href="<?php echo base_url('assets/flat-ui/style.css'); ?>" rel="stylesheet" >
+        <!-- Bootstrap 3.3.2 -->
+        <link href="<?php echo base_url('assets/AdminLTE-2.0.5/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css" />
+        <!-- Font Awesome Icons -->
+        <link href="<?php echo base_url('assets/font-awesome-4.3.0/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css" />
+        <!-- Ionicons -->
+        <link href="<?php echo base_url('assets/ionicons-2.0.1/css/ionicons.min.css') ?>" rel="stylesheet" type="text/css" />
+        <!-- Theme style -->
+        <link href="<?php echo base_url('assets/AdminLTE-2.0.5/dist/css/AdminLTE.min.css') ?>" rel="stylesheet" type="text/css" />
+        <!-- AdminLTE Skins. Choose a skin from the css/skins 
+             folder instead of downloading all of them to reduce the load. -->
+        <link href="<?php echo base_url('assets/AdminLTE-2.0.5/dist/css/skins/_all-skins.min.css') ?>" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		<!-- Static navbar -->
@@ -35,10 +45,12 @@
 			</div>
 		</div>
 	</nav>
-	<div class="container">
-		<div class="form-signin wrapper">
-			<h2>Pendaftaran Akun</h2>
-			<form class="form-horizontal" method="post" action="<?php echo site_url('auth/register'); ?>">
+	<section class="container">
+		<div class="col-md-5 box box-solid box-primary">
+		 <div class="box-header with-border">
+			<h3 class="box-title">Pendaftaran Akun</h3>
+			</div>
+			<form class="box-tools pull-right" method="post" action="<?php echo site_url('auth/register'); ?>">
 				<div class="form-group">
 					<label for="name" class="cols-sm-2 control-label">Nama Lengkap</label>
 					<div class="cols-sm-10">
@@ -127,6 +139,6 @@
 			<div class="clearfix">
 			</div>
 			<script src="assets/js/flat-ui.min.js"></script>
-		</div>
+		</section>
 	</body>
 </html>

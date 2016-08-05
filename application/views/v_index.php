@@ -6,32 +6,42 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
+		<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 		<title><?php echo $title ?></title>
-		<!-- Bootstrap core CSS -->
-        <link href="<?php echo base_url('assets/AdminLTE-2.0.5/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css" />
 		<!-- Custom styles for this template -->
+        <!-- Bootstrap 3.3.2 -->
+        <link href="<?php echo base_url('assets/AdminLTE-2.0.5/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css" />
+        <!-- Font Awesome Icons -->
+        <link href="<?php echo base_url('assets/font-awesome-4.3.0/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css" />
+        <!-- Ionicons -->
+        <link href="<?php echo base_url('assets/ionicons-2.0.1/css/ionicons.min.css') ?>" rel="stylesheet" type="text/css" />
+        <!-- Theme style -->
+        <link href="<?php echo base_url('assets/AdminLTE-2.0.5/dist/css/AdminLTE.min.css') ?>" rel="stylesheet" type="text/css" />
+        <!-- AdminLTE Skins. Choose a skin from the css/skins 
+             folder instead of downloading all of them to reduce the load. -->
+        <link href="<?php echo base_url('assets/AdminLTE-2.0.5/dist/css/skins/_all-skins.min.css') ?>" rel="stylesheet" type="text/css" />
 		<link href="<?php echo base_url('assets/flat-ui/flat-ui.css'); ?>" rel="stylesheet" >
 		<link href="<?php echo base_url('assets/flat-ui/style.css'); ?>" rel="stylesheet" >
 	</head>
 	<body>
 		<!-- Static navbar -->
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="container">
+		<nav class="navbar navbar-default navbar-primary" role="navigation">
+			<!-- <div class="container"> -->
+			<div class="container-fluid">
 				<div class="navbar-header">
-					</button>
 					<a class="navbar-brand" href="#">Personal Assistant</a>
 				</div>
-				<div id="navbar" class="navbar-collapse collapse">
+				<div class="collapse navbar-collapse" id="navbar-collapse">
 					<!-- <ul class="nav navbar-nav">
 						<li class="active"><a href="<?php //echo base_url();?>"><i class="glyphicon glyphicon-home"></i> Home</a></li>
 					</ul> -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<!-- <div class="collapse navbar-collapse" > -->
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#bantuan"><i class="glyphicon glyphicon-info-sign"></i> Bantuan</a></li>
 							<li><a href="<?php echo site_url('auth')?>"><i class="glyphicon glyphicon-log-in"></i> Login</a>
 						</li>
 					</ul>
-				</div>
+				<!-- </div> -->
 			</div>
 		</div>
 	</nav>
